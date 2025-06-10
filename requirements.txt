@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+nltk
+Gradio
+google-api-python-client
+ipython
+google-auth-oauthlib 
+google-auth-httplib2
+isodate
+xgboost
+matplotlib.cm

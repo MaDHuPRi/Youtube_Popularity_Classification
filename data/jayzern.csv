@@ -1,0 +1,201 @@
+video_id,channelTitle,title,description,tags,publishedAt,viewCount,likeCount,favoriteCount,commentCount,duration,definition,caption
+Xe8wYYC2gWQ,jayzern,What is Dagster? Asset Based Orchestration [2hr full course],"Dagster is a declarative, asset-based orchestrator that redefines the way we think about managing workflows. In this video, we’ll learn about features of Dagster including Assets, Resources, Jobs, Schedules, Partitions and more. We’ll do this by creating an End to End project from scratch using Dagster, data load tool (dlt) and Snowflake. I’m super excited about this one. Hope you’ll learn something new!
+
+Timestamps ⏰
+0:00 - Intro 
+1:45 - System Design
+6:30 - Setup Dagster and data load tool (dlt)
+21:40 - How to define Assets
+40:08 - Resources, code refactor
+43:22 - Schedules and Jobs
+48:42 - Backfill DAGs using Partitions
+54:39 - Sensors and Automaterialization policy
+1:09:31 - Final thoughts
+
+Notes 📝: https://bittersweet-mall-f00.notion.site/Dagster-Notes-7f2a686d3f7b402798a707d33b604fe9
+Github repo 💻: https://github.com/jayzern/dagster-mflix-demo
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials 📱
+linkedin: https://www.linkedin.com/in/jayzern/
+insta: https://www.instagram.com/jayzern/
+
+Sub Count: 11,390",,2024-07-20T18:42:39Z,16714,354,0,30,PT1H11M5S,hd,false
+OLXkGB7krGo,jayzern,"Code along - build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow)","How to build an ELT pipeline in 1 hour, using industry standard tools such as dbt, Snowflake and Airflow. This is a live coding tutorial, where I’ll walk you through the thinking process, and show you every step. We’ll cover basic data modeling techniques (fact tables, data marts), snowflake RBAC concepts, and how to orchestrate a dbt project using Airflow. Drop down in the comments section what Data Engineering topics you would like to see in the future!
+
+Timestamps ⏰
+0:00 - Intro
+1:35 - Setup dbt + Snowflake
+7:52 - Configure dbt_project.yml and packages
+11:45 - Create source and staging tables
+17:41 - Transformed models (fact tables, data marts)
+20:25 - Macro functions
+24:23 - Generic and singular tests
+29:35 - Deploy models using Airflow
+
+Live Coding notes 🎴
+https://bittersweet-mall-f00.notion.site/Code-along-build-an-ELT-Pipeline-in-1-Hour-dbt-Snowflake-Airflow-cffab118a21b40b8acd3d595a4db7c15
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials 📱
+linkedin: https://www.linkedin.com/in/jayzern/
+insta: https://www.instagram.com/jayzern/
+
+Sub Count: 7,163",,2024-02-26T14:57:05Z,228806,5415,0,217,PT36M34S,hd,false
+PmhlYO9ChhU,jayzern,Life as a Data Engineer in NYC | Q&A for 5k subscribers,"5k subscribers!! 🎉 Thank you for all the support. In this video, I'll share my personal insights on Life as a Data Engineer in NYC, and answer some hefty Q&As I get very often on Instagram. Some of my subscribers reached out to me saying they got job offers / made career switches because of my content. That made me super happy, and I hope to make more videos in the future. In the meantime, please enjoy this lifestyle video which I spontaneously cooked up over the weekend lol
+
+Timestamps ⏰
+0:00 Intro
+0:50 Life as a Data Engineer in NYC
+6:02 5k subscribers Q&A!!
+6:05 Which programming language should I learn? 
+7:28 How tall am I?
+7:36 Do I need a traditional degree to break into DE?
+8:17 What classes should I take in college?
+9:00 Advice for new grads starting their careers
+10:18 Ending
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials 📱
+https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Sub Count: 5,870",,2023-11-28T01:42:29Z,6722,276,0,37,PT10M45S,hd,false
+8bOgOvz6Tcg,jayzern,Intro to Amazon EMR - Big Data Tutorial using Spark,"Edit* 
+Make sure you encrypt your Spark script as you upload it inside S3 (timestamp: 13:42)
+There's a small typo in line 41 of the code, should be ""add_argument""
+
+Intro
+Today we're going to talk about a popular tool in Data Engineering. Amazon EMR is an industry-leading big data platform. It's a really mature service developed way back in 2009, and draws a lot of heuristics from the Apache Hadoop project. EMR is used for processing terabytes worth of data, and training machine learning models. In this tutorial, we'll dive deep into EMR's architecture, a live demo on how to trigger jobs using Steps, and demonstrate how to use Spark to extrapolate data from Amazon S3. Hope you enjoy this one!
+
+Timestamps ⏰
+0:00 Intro
+1:16 Overview of Amazon EMR
+5:10 Create filesystem, VPC, and configure EMR cluster
+9:04 Writing our Spark script
+13:42 3 ways to Trigger Steps in EMR
+18:32 SSH into Resource Manager in YARN
+19:50 Enable EMR managed auto-scaling
+20:57 Summary
+
+Notes from video 📝
+https://bittersweet-mall-f00.notion.site/Intro-to-Amazon-EMR-1bd32b0ec53b48f1a9ef8c6984b37ce0?pvs=4
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials 📱
+https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Sub Count: 4,539",,2023-09-09T17:15:06Z,47896,1336,0,97,PT22M2S,hd,false
+t7jC7lhPMYc,jayzern,Manifest your dreams. Why I started Youtube,"If there’s one thing I want you to take away from this video, it’s to feel inspired. Wherever you are in the world, whether you’re feeling happy or sad, I hope these next 5 minutes can uplift your spirit. I’m drafting lots of Data Engineering and Tech content at the moment. In the meantime, sit back, relax and enjoy the show. I’ll talk about my “why” and future of this channel.
+
+Timestamps ⏰
+0:00 Inspiration
+1:02 New York to Vegas
+2:01 Cinematic Montage #1
+3:39 Why I started Youtube. The future of this channel
+5:25 Cinematic Montage #2
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Gear 📸
+Canon R6
+Canon RF 24-105mm F4 L IS USM
+DJI Mic
+
+Socials 📱
+https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Sub Count: 1441",,2023-05-27T01:14:31Z,924,40,0,14,PT6M32S,hd,false
+VSxF0bb-JH4,jayzern,How I would learn Data Engineering (if I could start over),"In this video, I’ll share my step-by-step process on how I would learn Data Engineering if I could start over. Data Engineering is a fast emerging field within the Tech industry; where more and more people from traditional data science/software backgrounds are pivoting towards. We’ll cover the fundamentals of Data Engineering, and talk about some advanced topics you’ll need to learn in order to maximize your chances of success. Hope you enjoy this one!
+
+Timestamps ⏰
+0:00 Intro
+1:45 Fundamentals of Data Engineering
+4:51 Core Data Skills
+7:30 Advanced Data Skills
+10:07 Mindset
+
+Notes from video 📝
+https://bittersweet-mall-f00.notion.site/Fundamentals-b41c33ba1ab04e858a2be06946510c7e
+https://bittersweet-mall-f00.notion.site/Core-Data-Skills-4de7de1787574324852916c2ecd257a5
+https://bittersweet-mall-f00.notion.site/Advanced-Data-Skills-a87ccae98b4442d4861c72836fb2d376
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials 📱
+linkedin: https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Sub Count: 152",,2023-05-10T17:51:59Z,427414,17715,0,349,PT11M21S,hd,false
+LYgiRdkZKQA,jayzern,Living abroad is HARD (what I learned after 8 years in new york and london),"When you're traveling across different countries, it's very easy to cherry pick the best parts of different places to create a perfect image in your head. The reality is, living abroad in a foreign country versus going on vacation is two completely separate things. In this video, I highlight some key learnings after living abroad for over 8 years, and share insightful tips on how to ease that transition.
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what life was about, moving to so many places, navigating career in Tech. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials:
+https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Gear:
+DJI Mic
+Canon R6
+Canon RF 24-105mm F4 L IS USM
+Canon RF 35mm f/1.8 Macro IS STM Lens
+
+Sub Count: 117",,2023-04-10T18:01:07Z,4641,161,0,15,PT8M,hd,false
+cqp8TJ3XBeQ,jayzern,Electric Touch ⚡️ A R I Z O N A,"First time backpacking in Southeast Asia! Spent 8 days in Bali and Jakarta in total, with non-stop itinerary and little to no sleep. Thanks to @azizanabila_ @khorhuishen @hau_jiann @jiajenelee for tagging along our roller coaster adventure.
+
+instagram: @jayzern
+
+Gear:
+DJI Mini 3 Pro
+Canon R6
+Canon RF 24-105mm F4 USM
+Iphone 13 Pro",,2023-02-14T02:11:20Z,1362,47,0,1,PT53S,hd,false
+RNNFr6RrLXA,jayzern,MALAYSIA | Asia's Hidden Gem,"Malaysia is one of THE most underrated countries in Asia 🇲🇾. Last December, I went back home after being away for almost 3 years. I couldn't really find any videos that really showcase how amazing the country is (scenery, local food, culture), so I wanted to make one myself. It was a super hectic trip, trying to film and catch up with friends in only 2 weeks.
+
+Who am I? 🙋🏻‍♂️
+I'm Jay, I love making videos about travel, self-help and tech. I currently work in New York City as a data engineer, but I grew up in Malaysia and lived in the UK when I was 19. Back then, I had no idea what to expect and was a dumb kid in the city. Today, I've learned a lot and wanna share my perspective through filmmaking.
+
+Socials:
+https://www.linkedin.com/in/jayzern/
+https://www.instagram.com/jayzern/
+
+Gear:
+DJI Mini 3 Pro
+Canon R6
+Canon RF 24-105mm F4 L IS USM
+Canon RF 35mm f/1.8 Macro IS STM Lens
+Iphone 13 Pro
+
+Sub Count: 25",,2023-01-15T17:02:58Z,9252,289,0,17,PT5M9S,hd,false
+Qld2Z2ufTLA,jayzern,Fall Foliage in Vermont,"Road trip from NY to Vermont
+
+Thanks to @yarnehermann @andrealee_x @tiffy_le @jd_lassiter @velalu77 and yuki sensei
+
+Gear:
+Canon R6
+RF 24-105mm F4-7.1 is STM
+RF 35mm f/1.8 Macro IS STM Lens
+Iphone 13 Pro",,2022-10-27T01:15:29Z,689,7,0,3,PT10M41S,hd,false
+rV8JjCM7F8A,jayzern,Remember 🍿🎞️ Dabin,,,2022-08-11T01:56:20Z,830,16,0,0,PT1M,hd,false
+mTtfZlvoA3c,jayzern,Los Angeles,"City of angels
+
+Featuring @gareygan @lu8296 @junga_julia @derek_chen01 @ivkyoung
+
+Gear:
+Sony A6400
+Tamron 17-70mm f/2.8
+Sony E 35mm f/1.8 OSS",,2021-09-18T19:57:54Z,988,27,0,2,PT13M11S,hd,false
