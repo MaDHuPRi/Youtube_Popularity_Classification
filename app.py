@@ -338,6 +338,16 @@ def load_models():
         return None, None, None, None, None, None
 
     # ── Train regression ──
+    # Drop rows with NaN in any feature or target column
+    train_cols = REGRESSION_FEATURES + ['log_viewCount']
+    df = df.dropna(subset=train_cols)
+    # Replace any remaining inf values
+    df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=train_cols)
+    # Ensure all feature columns are numeric
+    for col in REGRESSION_FEATURES:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
+    df = df.dropna(subset=train_cols)
+
     X = df[REGRESSION_FEATURES]
     y = df['log_viewCount']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
