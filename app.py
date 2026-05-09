@@ -309,12 +309,12 @@ def load_models():
 
     # Sentiment
     sid_model = SentimentIntensityAnalyzer()
-    df['title'] = df['title'].astype(str) if 'title' in df.columns else ''
-    df['description'] = df['description'].astype(str) if 'description' in df.columns else ''
-    df['title_length'] = df['title'].apply(len)
-    df['has_description'] = df['description'].apply(lambda x: 1 if x.strip() else 0)
-    df['title_sentiment'] = df['title'].apply(lambda x: sid_model.polarity_scores(x)['compound'])
-    df['desc_sentiment'] = df['description'].apply(lambda x: sid_model.polarity_scores(x)['compound'])
+    df['title'] = df['title'].fillna('').astype(str) if 'title' in df.columns else ''
+    df['description'] = df['description'].fillna('').astype(str) if 'description' in df.columns else ''
+    df['title_length'] = df['title'].apply(lambda x: len(str(x)) if pd.notna(x) else 0)
+    df['has_description'] = df['description'].apply(lambda x: 1 if isinstance(x, str) and x.strip() else 0)
+    df['title_sentiment'] = df['title'].apply(lambda x: sid_model.polarity_scores(str(x) if pd.notna(x) else '')['compound'])
+    df['desc_sentiment'] = df['description'].apply(lambda x: sid_model.polarity_scores(str(x) if pd.notna(x) else '')['compound'])
 
     # Medians for null fill
     for col in ['likeCount', 'viewCount', 'commentCount']:
