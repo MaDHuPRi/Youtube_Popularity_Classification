@@ -255,10 +255,18 @@ CLUSTER_FEATURES = BASE_FEATURES + ['log_viewCount']
 @st.cache_resource(show_spinner=False)
 def load_models():
     """Load CSV, engineer features, train regression + clustering models."""
-    try:
-        df = pd.read_csv("data/merged_file.csv")
-    except FileNotFoundError:
+    import os, pathlib
+    cwd = pathlib.Path(os.getcwd())
+    csv_path = cwd / "data" / "merged.csv"
+    print(f"[DEBUG] cwd = {cwd}")
+    print(f"[DEBUG] looking for = {csv_path}")
+    print(f"[DEBUG] exists = {csv_path.exists()}")
+    print(f"[DEBUG] data/ contents = {list((cwd/'data').iterdir()) if (cwd/'data').exists() else 'NO DATA FOLDER'}")
+    if not csv_path.exists():
+        st.error(f"CSV not found at: `{csv_path}` | cwd: `{cwd}` | data/ files: `{list((cwd/'data').iterdir()) if (cwd/'data').exists() else 'folder missing'}`")
         return None, None, None, None, None, None
+    df = pd.read_csv(csv_path)
+    print(f"[DEBUG] loaded {len(df)} rows")
 
     # ── Feature engineering ──
     df.drop_duplicates(inplace=True)
@@ -437,7 +445,7 @@ with tab1:
     if reg_model is None:
         st.markdown("""
         <div class='info-box'>
-            ⚠️ <b>Dataset not found.</b> Place <code>merged_file.csv</code> in the <code>data/</code> folder next to <code>app.py</code> and restart.
+            ⚠️ <b>Dataset not found.</b> Place <code>merged.csv</code> in the <code>data/</code> folder next to <code>app.py</code> and restart.
         </div>
         """, unsafe_allow_html=True)
     elif not predict_btn:
