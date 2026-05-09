@@ -257,16 +257,17 @@ def load_models():
     """Load CSV, engineer features, train regression + clustering models."""
     import os, pathlib
     cwd = pathlib.Path(os.getcwd())
-    csv_path = cwd / "data" / "merged.csv"
-    print(f"[DEBUG] cwd = {cwd}")
-    print(f"[DEBUG] looking for = {csv_path}")
-    print(f"[DEBUG] exists = {csv_path.exists()}")
-    print(f"[DEBUG] data/ contents = {list((cwd/'data').iterdir()) if (cwd/'data').exists() else 'NO DATA FOLDER'}")
-    if not csv_path.exists():
-        st.error(f"CSV not found at: `{csv_path}` | cwd: `{cwd}` | data/ files: `{list((cwd/'data').iterdir()) if (cwd/'data').exists() else 'folder missing'}`")
+    # Load split CSV parts and combine
+    filenames = ["merged_1_1.csv", "merged_1_2.csv", "merged_2_1.csv", "merged_2_2.csv"]
+    parts = []
+    for name in filenames:
+        part_path = cwd / "data" / name
+        if part_path.exists():
+            parts.append(pd.read_csv(part_path))
+    if not parts:
+        st.error("No CSV parts found. Place merged_1_1.csv, merged_1_2.csv, merged_2_1.csv, merged_2_2.csv in the data/ folder.")
         return None, None, None, None, None, None
-    df = pd.read_csv(csv_path)
-    print(f"[DEBUG] loaded {len(df)} rows")
+    df = pd.concat(parts, ignore_index=True)
 
     # ── Feature engineering ──
     df.drop_duplicates(inplace=True)
